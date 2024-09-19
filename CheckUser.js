@@ -193,7 +193,7 @@ function CreateComment(){
 }
 
 function share(PostId) {
-    navigator.clipboard.writeText(`ht`).then(() => {
+    navigator.clipboard.writeText(`https://aaayme.github.io/FrontEnd/post?postId=${PostId}`).then(() => {
         alert('Link has been copied to clipboard');
     })
 }
