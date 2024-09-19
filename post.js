@@ -54,7 +54,7 @@ onload = function() {
 
     }
 
-    axios.get(`http://aionversealpha.onrender.com/Post/${postId}`).then((res ) => {
+    axios.get(`https://aionversealpha.onrender.com/Post/${postId}`).then((res ) => {
         loadData(res.data)
     }).catch(function (){
         location.href = './404.html'
