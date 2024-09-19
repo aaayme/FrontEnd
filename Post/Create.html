@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../home.css" rel="stylesheet">
+    <link href="./Create.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../CheckUser.js"></script>
+    <script src="Create.js"></script>
+</head>
+<body>
+    <header>
+
+        <div>
+            <a href = './login.html'>login</a>
+            <a href = './register.html'>sign up</a>
+        </div>
+        <div>
+            <a href = './home.html'>home</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="post">
+            <label>
+                <input id='titleInput' placeholder="Title">
+            </label>
+            <label>
+                <textarea id='bodyInput' placeholder="Content"></textarea>
+            </label>
+            <label for="imageInput">
+                <img alt="Upload Your Image">
+                <input id='imageInput' type="file" accept="image/png, image/jpeg, image/jpg" style="display: none">
+            </label>
+
+            <div class="pub">
+                <h3>Public</h3>
+                <label class ="Switch">
+                    <input type="checkbox" id="Public" >
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <button id='createPost'>Create</button>
+
+        </div>
+
+
+
+    </main>
+
+</body>
+</html>

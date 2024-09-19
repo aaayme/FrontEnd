@@ -1,0 +1,265 @@
+header {
+    background: rgba(0, 0, 0, 0.38);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+
+
+html {
+    min-height: 100%;
+}
+body {
+    background: linear-gradient(to right bottom, #386138, #33a39d) no-repeat;
+    font-family: "Segoe UI", sans-serif;
+    min-height: 100%;
+    margin: 0;
+
+}
+
+header div{
+    display: flex;
+    flex-direction: row;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 20px;
+    padding: 20px;
+}
+.post {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.11);
+    border-radius: 20px;
+    font-family: "Segoe UI","Helvet",sans-serif;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.post h2 ,.post p ,.post img{
+   background: #ffffff;
+    border-radius: 20px;
+    padding: 10px;
+    color: #000000;
+}
+
+.post h2 {
+    align-self: start;
+    font-weight: bold;
+    margin-left: 1%;
+}
+
+.post p {
+    font-size: large;
+    font-family: "Segoe UI Semibold",sans-serif;
+    margin-top: 0;
+}
+
+.post > img {
+    display: none;
+}
+
+.user {
+    display: inline-flex;
+    align-self: start;
+    background: black;
+    align-items: center;
+    padding-right: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.user h3 {
+    border-radius: 20px;
+    color: white;
+    margin: 0 0 0 12px;
+}
+.user  img {
+    margin: 0;
+    border-radius: 100px;
+    background: white !important;
+    border: solid black 2px;
+    width: 34px ;
+    padding: 0;
+}
+
+
+
+.buttonList button{
+    background: #163a04;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.buttonList button:hover {
+    transform: scale(1.05);
+}
+
+.comment{
+    background: rgba(255, 255, 255, 0.53);
+    border-radius: 6px;
+    padding: 4px;
+    margin: 10px 5px;
+}
+
+.comment p {
+    font-size: small;
+    margin: 0;
+    background: none;
+    padding-top: 0;
+}
+
+.comment .user{
+    padding-right: 10px;
+    font-size: medium;
+}
+
+.comment .user h3 {
+    font-size: medium;
+}
+.comment .user  img {
+    width: 20px ;
+    height: 20px;
+}
+
+.commentInput {
+    margin: 10px;
+
+}
+
+.commentInput input{
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.commentInput button{
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    font-weight: bold;
+}
+
+.commentInput button:hover {
+    background: #163a04;
+    color: white;
+
+}
+
+.deleteImage{
+
+    padding: 0 !important;
+    background: transparent !important;
+    margin: 0;
+    width: 25px;
+    cursor: pointer;
+
+}
+
+.commentOptions{
+    display:flex;
+    justify-content: space-between;
+}
+
+#PostNew{
+    display: block;
+    background: rgba(0, 0, 0, 0.41);
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 0;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+    font-family: Arial,sans-serif;
+    cursor: pointer;
+    border: none;
+}
+
+#PostNew:hover{
+    background: rgba(0, 0, 0, 0.61);
+}
+
+.PostImage{
+
+
+    margin: 0 1em 1em;
+
+    justify-self: center;
+    max-width: 92%;
+    align-self: center;
+    padding: 0 !important;
+}
+
+.headUser{
+    background: rgba(45, 119, 13, 0.64);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 3px 15px 3px 3px;
+    border: none;
+    margin: 3px;
+}
+
+.headUser img{
+    border-radius: 100px;
+    background: white !important;
+    border: solid black 2px;
+    width: 2.5em ;
+    display: block;
+    padding: 0;
+}
+
+.headUser:hover{
+    background: rgba(45, 119, 13, 0.84);
+    cursor: pointer;
+}
+.loggedUser{
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 0.2em;
+}
+
+button {
+    cursor: pointer;
+}
+
+.private {
+
+    display: flex;
+    flex-direction: row-reverse;
+}
+.private p{
+    background: #b30606;
+    color: white;
+    font-weight: bolder;
+    padding:0.3em 0.5em;
+    margin: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    text-align: center;
+    line-height: 2.3em !important;
+    margin: 0;
+    cursor: pointer;
+
+}
+a:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.headerButtons {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+

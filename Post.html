@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post</title>
+    <link href="./home.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="CheckUser.js"></script>
+    <script src="post.js"></script>
+    <style>
+        html {
+            min-height: 100%;
+        }
+        body {
+            min-height: 80%;
+
+        }
+        main {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+        <div>
+            <a href = './login.html'>login</a>
+            <a href = './register.html'>sign up</a>
+        </div>
+        <div>
+            <a href = './home.html'>home</a>
+        </div>
+    </header>
+    <main>
+        <div class="post">
+            <div id = 'user' class="user">
+                <img src="" alt="profileImage">
+                <h3 id="username"> dd </h3>
+            </div>
+            <h2 id="PostTitle">${post.Title}</h2>
+            <p id="PostBody">
+            </p>
+            <img src="" id ='PostImage' class='PostImage' style="display: none">
+            <div class="buttonList">
+                <button class='share' type="button" >Share</button>
+                <button id='loadComments' class='comments' type="button">Load Comments</button>
+            </div>
+            <div class="commentInput">
+                <input placeholder="write your comment here">
+                <button type="submit" id="Submit">Submit</button>
+            </div>
+            <div class="comments">
+            </div>
+        </div>
+    </main>
+</body>
+</html>

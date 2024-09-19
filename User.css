@@ -1,0 +1,14 @@
+.DeletePost{
+    background: transparent !important;
+    height: 2em !important;
+    padding: 0.1em !important;
+}
+
+.UserHolder{
+    display: flex;
+    justify-content: space-between;
+}
+
+.UserHolder img:hover{
+    cursor: pointer;
+}

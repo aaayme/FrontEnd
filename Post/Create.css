@@ -1,0 +1,104 @@
+textarea {
+    resize: none;
+}
+
+.post {
+    display :flex;
+    padding: 1.5em;
+    flex-direction: column;
+}
+
+input{
+    padding: 0.5em;
+    margin: 0.5em 0;
+    border-radius: 0.5em;
+    border: none;
+    font-weight: bold;
+    font-size: x-large;
+    width: 80%;
+}
+
+textarea {
+    font-size: large;
+    font-family: "Segoe UI Semibold",sans-serif;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    align-self: center;
+    width: 98%;
+    height: 50vh;
+}
+
+label[for="imageInput"]{
+    align-self: center;
+    margin : 1em
+}
+img {
+    font-weight: bold;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+    max-width: 98%;
+    padding: 0;
+}
+
+img:hover{
+
+    background: rgb(236, 236, 236);
+    cursor: pointer;
+}
+
+.Switch {
+    position: relative;
+    display: inline-block;
+    width: 4.2em;
+    aspect-ratio: 2/1;
+
+    border-radius: 2.5em;
+    background: #ffffff;
+    justify-content: flex-start;
+}
+
+.Switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+
+.slider {
+    position: absolute;
+    margin: 2px;
+    height: 90%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    background-color: rgb(234, 47, 47);
+    transition: .4s;
+    border-radius: 2.5em;
+}
+
+input:checked + .slider {
+    background: #2e8502;
+    translate: 2em;
+}
+
+.pub{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5em;
+}
+
+button{
+    background-color: rgba(0, 0, 0, 0.79);
+    color: white;
+    border-radius: 2.5em;
+    font-weight: bold;
+    font-size: large;
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+
+}
+
