@@ -6,7 +6,7 @@ addEventListener('load',getUserData)
 
 function logout (){
 
-    axios.post('http://aionversealpha.onrender.com/Logout',{
+    axios.post('https://aionversealpha.onrender.com/Logout',{
         RToken: localStorage.getItem('AIONRToken')
     }).then(function(response){
         console.log(response)
